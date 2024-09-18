@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button id="menuButton" aria-expanded="false" aria-controls="menuContent">
+        Menu
+      </button>
+      <nav id="menuContent" aria-hidden="true">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <button id="openModalBtn">Open Info</button>
+      <div
+        id="accessibleModal"
+        role="dialog"
+        aria-labelledby="modalTitle"
+        aria-hidden="true"
+      >
+        <h2 id="modalTitle">Important Information</h2>
+        <p>This is some more information in a modal window.</p>
+        <button id="closeModalBtn">Close</button>
+      </div>
+
+      <dialog id="accessibleDialog" aria-labelledby="dialogTitle">
+        <h2 id="dialogTitle">More Information</h2>
+        <p>This is additional information in a modal dialog.</p>
+        <button id="closeDialogBtn">Close</button>
+      </dialog>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
